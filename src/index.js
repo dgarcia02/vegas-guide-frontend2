@@ -9,9 +9,9 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './store/index';
 
+// now the app.js has access to the store using the provider component and passing in the store prop
 ReactDOM.render(
     <React.StrictMode>
-    // now the app.js has access to the store using the provider component and passing in the store prop
     <Provider store={store}>
         <App />
     </Provider>
