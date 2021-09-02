@@ -5,11 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
 import allReducers from './reducers';
+// this connects our store to the App
+import { Provider } from 'react-redux';
 
+// Store -> Global State
 // this is combining all reducers and making it available in store & App
-const store = createStore(allReducers)
+// the 2nd parameter is to access the redux dev tools
+const store = createStore(
+    allReducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
 
-// now the app.js has access to the store using the provider component and passing in the store prop
+// now the app.js has access to the store using the provider component and passing in the store prop 
 ReactDOM.render(
     <React.StrictMode>
     <Provider store={store}>

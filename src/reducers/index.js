@@ -4,7 +4,7 @@ import isLoggedReducer from './isLogged';
 import { combineReducers } from 'redux';
 
 const allReducers = combineReducers({
-    // // left counter is the name you are giving it to call it later
+    // // left counter is the state name 
     // // right counterReducer is the actual value from the reducer
     counter: counterReducer,
     isLogged: isLoggedReducer

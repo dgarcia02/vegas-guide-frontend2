@@ -3,6 +3,8 @@ const isLoggedReducer = (state = false, action) => {
         case 'SIGN_IN':
         // the !state will flip the current state to the opposite
             return !state;
+        default:
+            return state
     }
 }
 
