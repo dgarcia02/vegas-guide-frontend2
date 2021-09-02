@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import allReducers from './reducers';
 
-// Redux imports
-    // provider is a component
-import { Provider } from 'react-redux';
-import store from './store/index';
+// this is combining all reducers and making it available in store & App
+const store = createStore(allReducers)
 
 // now the app.js has access to the store using the provider component and passing in the store prop
 ReactDOM.render(
