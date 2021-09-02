@@ -4,6 +4,10 @@ import './App.css';
 // dispatch is what actually does the action
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './actions';
+import Navbar from './components/Navbar';
+
+// Bootstrap Components
+import Button from 'react-bootstrap/Button';
 
 const App = () => {
     const counter = useSelector(state => state.counter)
@@ -15,11 +19,12 @@ const App = () => {
             <div className='headerContainer'>
                 <img src="https://i.imgur.com/6LtVTDQ.jpg"/>
             </div>
+            <Navbar />
             <>
                 <h1>Las Vegas Shows & Events</h1>
                 <h3>Upcoming Shows: {counter}</h3>
-                <button onClick={() => dispatch(increment())}>+</button>
-                <button onClick={() => dispatch(decrement())}>-</button>
+                <Button onClick={() => dispatch(increment())}>+</Button>
+                <Button onClick={() => dispatch(decrement())}>-</Button>
 
                 {isLogged ? <h3>Valuable Information</h3> : ''}
             </>
