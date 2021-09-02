@@ -11,14 +11,19 @@ const App = () => {
     const dispatch = useDispatch()
 
     return (
-        <>
-            <h1>Las Vegas Shows & Events</h1>
-            <h3>Upcoming Shows: {counter}</h3>
-            <button onClick={() => dispatch(increment())}>+</button>
-            <button onClick={() => dispatch(decrement())}>-</button>
+        <div className='container'>
+            <div className='headerContainer'>
+                <img src="https://i.imgur.com/6LtVTDQ.jpg"/>
+            </div>
+            <>
+                <h1>Las Vegas Shows & Events</h1>
+                <h3>Upcoming Shows: {counter}</h3>
+                <button onClick={() => dispatch(increment())}>+</button>
+                <button onClick={() => dispatch(decrement())}>-</button>
 
-            {isLogged ? <h3>Valuable Information</h3> : ''}
-        </>
+                {isLogged ? <h3>Valuable Information</h3> : ''}
+            </>
+        </div>
     )
 }
 
