@@ -1,3 +1,10 @@
+:root {
+    --vegasRed: #c60e0e;
+    --vegasYellow: #ffef00;
+    --vegasDarkBlue: #26337b;
+    
+}
+
 .App {
   text-align: center;
 }
