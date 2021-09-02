@@ -5,6 +5,7 @@ import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './actions';
 import Navbar from './components/Navbar';
+import Login from './components/LogIn';
 
 // Bootstrap Components
 import Button from 'react-bootstrap/Button';
@@ -16,11 +17,12 @@ const App = () => {
 
     return (
         <div className='container'>
+            <Navbar />
             <div className='headerContainer'>
                 <img src="https://i.imgur.com/6LtVTDQ.jpg"/>
             </div>
-            <Navbar />
             <>
+                <Login />
                 <h1>Las Vegas Shows & Events</h1>
                 <h3>Upcoming Shows: {counter}</h3>
                 <Button onClick={() => dispatch(increment())}>+</Button>
