@@ -7,7 +7,7 @@ import { increment, decrement } from './actions';
 
 // Components
 import Navbar from './components/Navbar';
-import Login from './components/LogIn';
+import LoginForm from './components/LogIn';
 
 // Bootstrap Components
 import Button from 'react-bootstrap/Button';
@@ -25,7 +25,7 @@ const App = () => {
                 <img src="https://i.imgur.com/6LtVTDQ.jpg"/>
             </div>
             <>
-                
+
                 <h1>Las Vegas Shows & Events</h1>
                 <h3>Upcoming Shows: {counter}</h3>
                 <Button onClick={() => dispatch(increment())}>+</Button>

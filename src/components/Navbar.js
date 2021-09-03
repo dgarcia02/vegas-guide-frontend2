@@ -1,10 +1,11 @@
-import '../App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { logIn } from '../actions';
 import { open_close } from '../actions';
 import 'react-responsive-modal/styles.css'
 import { Modal } from 'react-responsive-modal';
+import '../App.css';
 import Button from 'react-bootstrap/Button';
+import LoginForm from './LogIn';
 
 const Navbar = () => {
     const dispatch = useDispatch()
@@ -45,8 +46,8 @@ const Navbar = () => {
                                 classNames={{
                                     overlay: 'customOverlay',
                                     modal: 'customModal',
-                                }}>
-                                <h3>Testing Modal</h3>
+                                }} >
+                                <LoginForm />
                             </Modal>
                         </li>
                     }
