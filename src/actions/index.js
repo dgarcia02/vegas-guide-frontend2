@@ -16,3 +16,9 @@ export const logIn = () => {
         type: 'LOG_IN'
     }
 }
+
+export const open_close = () => {
+    return {
+        type: 'OPEN_CLOSE'
+    }
+}
