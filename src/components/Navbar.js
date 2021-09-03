@@ -40,7 +40,7 @@ const Navbar = () => {
                             <Button onClick={()=> dispatch(open_close())}>Log In</Button>
                             <Modal
                                 open={ loginOpen }
-                                onClose={ dispatch(open_close()) }
+                                onClose={ ()=>dispatch(open_close()) }
                                 center
                                 classNames={{
                                     overlay: 'customOverlay',
