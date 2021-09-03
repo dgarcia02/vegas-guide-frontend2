@@ -23,8 +23,8 @@ export const open_close = () => {
     }
 }
 
-export const setShow = () => {
-    return {
-        type: 'SET_SHOW'
-    }
-}
+// export const setShow = () => {
+//     return {
+//         type: 'SET_SHOW'
+//     }
+// }

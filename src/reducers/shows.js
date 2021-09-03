@@ -1,6 +1,6 @@
-const showsReducer = (data) => {
-    type: setShow,
-    payload: data
-}
-
-export default showsReducer;
+// const showsReducer = (data) => {
+//     type: setShow,
+//     payload: data,
+// };
+//
+// // export default showsReducer;

@@ -1,7 +1,7 @@
 import counterReducer from './counter';
 import isLoggedReducer from './isLogged';
 import loginModalReducer from './loginModal';
-import showsReducer from './shows';
+// import showsReducer from './shows';
 // built in redux that brings all reducers together
 import { combineReducers } from 'redux';
 
@@ -11,7 +11,7 @@ const allReducers = combineReducers({
     counter: counterReducer,
     isLogged: isLoggedReducer,
     loginOpen: loginModalReducer,
-    shows: showsReducer,
+    // shows: showsReducer,
 })
 
 export default allReducers;

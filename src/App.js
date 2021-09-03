@@ -8,6 +8,7 @@ import { increment, decrement } from './actions';
 import Navbar from './components/Navbar';
 import LoginForm from './components/LogIn';
 import Shows from './components/Shows';
+import NewUserForm from './components/NewUserForm';
 
 // Bootstrap Components
 import Button from 'react-bootstrap/Button';
@@ -24,7 +25,7 @@ const App = () => {
             <div className='headerContainer'>
                 <img src="https://i.imgur.com/6LtVTDQ.jpg"/>
             </div>
-            <Shows />
+            <NewUserForm />
 
                 <h1>Las Vegas Shows & Events</h1>
                 <h3>Upcoming Shows: {counter}</h3>
