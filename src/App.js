@@ -1,4 +1,3 @@
-import axios from 'axios';
 import './App.css';
 // this allows you to call the global states
 // dispatch is what actually does the action
@@ -8,6 +7,7 @@ import { increment, decrement } from './actions';
 // Components
 import Navbar from './components/Navbar';
 import LoginForm from './components/LogIn';
+import Shows from './components/Shows';
 
 // Bootstrap Components
 import Button from 'react-bootstrap/Button';
@@ -24,7 +24,7 @@ const App = () => {
             <div className='headerContainer'>
                 <img src="https://i.imgur.com/6LtVTDQ.jpg"/>
             </div>
-            <>
+            <Shows />
 
                 <h1>Las Vegas Shows & Events</h1>
                 <h3>Upcoming Shows: {counter}</h3>
@@ -32,7 +32,6 @@ const App = () => {
                 <Button onClick={() => dispatch(decrement())}>-</Button>
 
                 {isLogged ? <h3>Valuable Information</h3> : ''}
-            </>
         </div>
     )
 }
