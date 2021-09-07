@@ -1,5 +1,6 @@
 import '../App.css';
 import { useSelector, useDispatch } from 'react-redux';
+import { userAuth } from '../actions';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
@@ -7,7 +8,8 @@ const NewUserForm = () => {
 
     return (
         <div className="form-container">
-            <Form className="newsUser-form">
+            <h4>Create an Account</h4>
+            <Form className="newsUser-form" onSubmit={}>
                 <Form.Group className="mb-3" controlId="">
                     <Form.Label>Username</Form.Label>
                     <Form.Control type='text' placeholder="Enter username" />

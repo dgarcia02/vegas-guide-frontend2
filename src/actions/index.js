@@ -28,3 +28,16 @@ export const open_close = () => {
 //         type: 'SET_SHOW'
 //     }
 // }
+
+export const userAuth = (event) => {
+    return {
+        type: 'ADD',
+        username: event.value,
+        password: event.value
+    }
+}
+
+
+
+
+//

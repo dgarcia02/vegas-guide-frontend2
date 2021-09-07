@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { logIn } from '../actions';
-import { open_close } from '../actions';
+import { logIn, open_close } from '../actions';
 import 'react-responsive-modal/styles.css'
 import { Modal } from 'react-responsive-modal';
 import '../App.css';
@@ -56,5 +55,3 @@ const Navbar = () => {
         </div>
     )
 }
-
-export default Navbar;
