@@ -29,9 +29,9 @@ const HomeBody = () => {
     // this opens and closes the modal
     const handleClose = () => setShowModal(false)
 
-    const handleChange = (event) => {
-        setUserInput({ ...userInput, [event.target.name]: event.target.value })
-    }
+    // const handleChange = (event) => {
+    //     setUserInput({ ...userInput, [event.target.name]: event.target.value })
+    // }
 
     // const searchEvent = (event) => {
     //     setUserInput(event.target.value)

@@ -10,7 +10,7 @@ export const userAPISlice = createApi({
             query: () => ({
                 url: '/users/login',
                 method: 'PUT',
-                body,
+                // body,
             })
         }),
         fetchUsers: build.query({
@@ -20,7 +20,7 @@ export const userAPISlice = createApi({
             query: (body) => ({
                 url: '/users',
                 method: 'POST',
-                body,
+                // body,
             }),
         })
     })
