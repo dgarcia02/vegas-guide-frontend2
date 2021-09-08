@@ -9,7 +9,7 @@ const NewUserForm = () => {
     return (
         <div className="form-container">
             <h4>Create an Account</h4>
-            <Form className="newsUser-form" onSubmit={}>
+            <Form className="newsUser-form">
                 <Form.Group className="mb-3" controlId="">
                     <Form.Label>Username</Form.Label>
                     <Form.Control type='text' placeholder="Enter username" />
