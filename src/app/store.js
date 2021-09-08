@@ -5,8 +5,8 @@ import currentUserSlice from '../features/currentUser/currentUserSlice';
 
 // API's
 import { showsApiSlice } from '../api/services/shows-api-slice';
-import { userAPISlice } from './features/userAuth/userSlice';
-import { profileApiSlice } from './features/profiles/profileApiSlice';
+import { userAPISlice } from '../features/userAuth/userSlice';
+import { profileApiSlice } from '../features/profiles/profileApiSlice';
 
 
 // can pass in all reducers in this object
