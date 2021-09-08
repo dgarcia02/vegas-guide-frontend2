@@ -1,15 +1,16 @@
-import { Modal } from 'react-responsive-modal';
-import 'react-responsive-modal/styles.css'
-import '../App.css';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState } from 'react'
+import '../../App.css';
+// import { useSelector, useDispatch } from 'react-redux';
+import NewUserForm from './NewUserForm'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const LoginForm = () => {
+const LogInForm = () => {
 
     return (
         <div id="form-container">
-            <Form className="loginForm">
+            {/* to put a ternary, check the state of current user */}
+            <Form className="loginForm" >
                 <Form.Group className="mb-3" controlId="">
                     <Form.Label>Username</Form.Label>
                     <Form.Control type="text" placeholder="Enter username" />
@@ -17,18 +18,14 @@ const LoginForm = () => {
 
                 <Form.Group className="mb-3" controlId="">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Enter your password." />
+                    <Form.Control type="password" placeholder="Enter your password" />
                 </Form.Group>
-
                 <Button variant="primary" type="submit">
-                Log In
+                    Log In
                 </Button>
-                <br/>
-                <br/>
-                <p>Need an account?</p>
             </Form>
         </div>
     )
 }
 
-export default LoginForm;
+export default LogInForm;

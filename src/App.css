@@ -1,39 +1,146 @@
-:root {
-    --vegasRed: #c60e0e;
-    --vegasYellow: #ffef00;
-    --vegasDarkBlue: #26337b;
-    --vegasLightBlue: #ddf5f5;
-    --vegasGreen: #97c93d;
+root {
+  --primarySilver: #EDEDED;
+  --electricViolet: #9601FF;
+  --richBlack: #070707;
+  --intOrange: #F24C00;
 }
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  /* margin: auto; */
+  /* background-color: #EDEDED; */
+}
+.main-container {
+  background-color: #EDEDED;
 }
 
 .App {
   text-align: center;
 }
 
-img {
-    width: 100%;
-    height: 300px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.headerImg {
+  width: 100%;
 }
 
 .navbar {
-    background: lightgray;
+  background-color: #EDEDED;
+  height: 5em;
 }
 
-.customOverlay {
-    background: red;
+.nav-menu {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
 }
 
-.customModal {
-    background-color: red;
-    width: 35%;
+.navbar > img {
+  margin: 0 0 1em 1.6em;
 }
 
-.loginForm {
+.switchAccount {
+  color: cadetblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
+ul {
+  list-style-type: none;
+}
+
+.shows-container {
+  display: flex;
+  /* background-color: wheat; */
+}
+
+.allShows {
+  /* background-color: thistle; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mainImg {
+  cursor: pointer;
+  box-shadow: 0px 16px 40px rgba(0,0,0,0.25);
+  border-radius: 30px;
+}
+
+
+.individualShow {
+  width: 32%;
+  /* background-color: whitesmoke; */
+  margin: 1em 0 1em 0;
+}
+
+.individualShow > img {
+  width: 100%;
+  height:11rem;
+  /* height: auto; */
+
+}
+
+.individualShow > p {
+  font-size: 0.6rem;
+}
+
+footer{
+  background-color: #070707;
+  color: whitesmoke;
+  margin-top: 2em;
+}
+
+.footer-container, .row-container, .col-Container {
+  background-color: #070707;
+}
+
+.navIcons {
+  color: #CCCCCC;
+  font-size: 1.2em;
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.navIcons:hover {
+  color: #9601FF;
+  -webkit-transition: color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.searchDiv {
+  margin: auto;
+  width: 40%;
+}
+
+.sidePanel-container {
+  background-color: #292929;
+  color: whitesmoke;
+}
+
+.homeBody-container {
+  width: 100%;
+  margin: auto;
+}
+
+.upcomingShows {
+  border-bottom: 1px solid lightgrey;
 }
